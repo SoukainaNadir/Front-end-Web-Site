@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" href="img/call360-logo.png" type="icon/x image">
+    <script type="module" src="/script.js" defer></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cash/1.3.0/cash.min.js"></script>
+    <script src="https://codepen.io/shshaw/pen/epmrgO.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css"
+      integrity="sha256-x8PYmLKD83R9T/sYmJn1j3is/chhJdySyhet/JuHnfY="
+      crossorigin="anonymous"
+    />
+<!-- links section 4 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="http://themes.audemedia.com/html/goodgrowth/css/owl.theme.default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/owl.carousel.min.js"></script>
+<!-- end links section 4 --> 
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+<!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Playfair+Display:wght@400;600;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<!-- fonts awsome -->
+<script src="https://kit.fontawesome.com/e349bd07c1.js" crossorigin="anonymous"></script>    
+<!-- Splide hero section -->    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/themes/splide-skyblue.min.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome | CALL 360</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <div class="loader">
+      <div class="circle"></div>
+      <div class="circle"></div>
+    </div>
+    <div class="nav-bar w-full fixed bg-white z-50 dark:bg-gray-900">
+      <div class="container">
+        <nav class="py-0 flex justify-between items-center ">
+          <a href="/index.html" class="py-2 mr-4 inline-flex items-center">
+            <img src="./img/call360-logo.png" alt="#" class="h-12 w-12 hover:opacity-50">
+          </a>  
+          <button class="text-[#212154] inline-flex p-3 hover:bg-[#212154] rounded lg:hidden ml-auto hover:text-white outline-none nav-toggler" data-target="#navigation">
+            <i class="material-icons">menu</i>
+          </button>
+          <div class="hidden top-navbar w-full lg:inline-flex lg:flex-grow lg:w-auto" id="navigation">
+            <div class="join-us first-letter:lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start flex flex-col lg:h-auto">
+              <a href="/theGroup.html" class=" lg:inline-flex lg:w-auto px-3 py-2 rounded text-[#212154] dark:text-white dark:hover:text-[#4588c8] hover:text-[#607EAA] hover:transition duration-700">
+                <span>THE GROUP</span>
+              </a>
+              <a href="#" class="lg:inline-flex lg:w-auto px-3 py-2 rounded text-[#212154] dark:text-white dark:hover:text-[#4588c8] hover:text-[#607EAA] hover:transition duration-700">
+                <span>OUR EXPERTISE</span>
+              </a>
+              <a href="#" class="lg:inline-flex lg:w-auto px-3 py-2 rounded text-[#212154] dark:text-white dark:hover:text-[#4588c8] hover:text-[#607EAA] hover:transition duration-700">
+                <span>IT SOLUTIONS</span>
+              </a>
+              <a href="#" class="lg:inline-flex lg:w-auto px-3 py-2 rounded text-[#212154] dark:text-white dark:hover:text-[#4588c8] hover:text-[#607EAA] hover:transition duration-700">
+                <span>MEET US</span>
+              </a>
+              <a href="#" class="lg:inline-flex lg:w-auto px-3 py-2 rounded text-[#212154] hover:text-white bg-gradient-to-r from-[#4588c8] to-[#d5dbe5] hover: transition duration-700">
+                <span>JOIN US</span>
+              </a>
+              <button 
+                  class="absolute top-5 right-5 w-10 h-5 md:w-12 md:h-6 rounded-2xl bg-white flex items-center    transition duration-300 focus:outline-none shadow" 
+                  onclick="toggleTheme()">
+                <div id="switch-toggle"
+                class="w-6 h-6 md:w-7 md:h-7 relative rounded-full transform bg-[#4588c8] -translate-x-2 p-1 text-white">
+                <i class="fa-solid fa-sun"></i>
+                </div>
+              </button>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!-- HERO SECTION -->
+    <div id="progress" class="bg-[#212154] dark:bg-white"></div>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide one">
+          <section class="hero">
+            <div class="container-hero">
+              <div class="container-text">
+                <p>Heart of Perfect Customer Service
+                </p>
+              </div>
+              <div class="hero-text">
+                <div class="call360">
+                  <h1 class="text-call">CALL <span></span></h1>
+                  <h1 class="text-360 ">360 <span></span></h1>
+                </div> 
+                <p>Making every call count</p>
+                <div class="getmore">
+                  <a href="#" type="button" class="cta">GET MORE</a>
+              </div>
+            </div>
+            <div class="blob">
+              
+              <svg viewBox="0 0 800 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+                <g transform="translate(159.34142684936523, 18.754878997802734)">
+                  <path fill="#203a51">
+                    <animate attributeName="d"
+                      dur="10000ms"
+                      repeatCount="indefinite"
+                      values="M467.5,317.5Q436,385,372,407Q308,429,255.5,412Q203,395,151,377.5Q99,360,68.5,305Q38,250,80.5,204Q123,158,151,95.5Q179,33,252.5,24.5Q326,16,356.5,83.5Q387,151,443,200.5Q499,250,467.5,317.5Z;
+                      
+                      M418,298.5Q383,347,348.5,397Q314,447,251,444Q188,441,125,414Q62,387,74.5,318.5Q87,250,70.5,179Q54,108,119.5,78.5Q185,49,242.5,72.5Q300,96,355,115Q410,134,431.5,192Q453,250,418,298.5Z;
+                      
+                      M430.5,319Q439,388,371,401.5Q303,415,249.5,415Q196,415,131.5,399Q67,383,70,316.5Q73,250,63,178.5Q53,107,121,85.5Q189,64,254,50Q319,36,354,92.5Q389,149,405.5,199.5Q422,250,430.5,319Z;
+                      
+                      M444.5,318.5Q439,387,373.5,408.5Q308,430,255.5,412.5Q203,395,161,370Q119,345,90,297.5Q61,250,63.5,183Q66,116,121,69Q176,22,245.5,35.5Q315,49,351.5,99.5Q388,150,419,200Q450,250,444.5,318.5Z;
+                      
+                      M467.5,317.5Q436,385,372,407Q308,429,255.5,412Q203,395,151,377.5Q99,360,68.5,305Q38,250,80.5,204Q123,158,151,95.5Q179,33,252.5,24.5Q326,16,356.5,83.5Q387,151,443,200.5Q499,250,467.5,317.5Z;">
+                    </animate>
+                  </path>
+                </g>
+                </svg>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="swiper-slide two ">
+          <section class="hero">
+            <div class="container-hero">
+              <div class="container-text">
+                <p>Heart of Perfect Customer Service
+                </p>
+              </div>
+              <div class="hero-text">
+                <div class="call360">
+                  <h1 class="text-call">CALL <span></span></h1>
+                  <h1 class="text-360 ">360 <span></span></h1>
+                </div> 
+                <p>Making every call count</p>
+                <div class="getmore">
+                  <a href="#" type="button" class="cta">GET MORE</a>
+              </div>
+            </div>
+            <div class="blob">
+              
+              <svg viewBox="0 0 800 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+                <g transform="translate(159.34142684936523, 18.754878997802734)">
+                  <path fill="#203a51">
+                    <animate attributeName="d"
+                      dur="10000ms"
+                      repeatCount="indefinite"
+                      values="M467.5,317.5Q436,385,372,407Q308,429,255.5,412Q203,395,151,377.5Q99,360,68.5,305Q38,250,80.5,204Q123,158,151,95.5Q179,33,252.5,24.5Q326,16,356.5,83.5Q387,151,443,200.5Q499,250,467.5,317.5Z;
+                      
+                      M418,298.5Q383,347,348.5,397Q314,447,251,444Q188,441,125,414Q62,387,74.5,318.5Q87,250,70.5,179Q54,108,119.5,78.5Q185,49,242.5,72.5Q300,96,355,115Q410,134,431.5,192Q453,250,418,298.5Z;
+                      
+                      M430.5,319Q439,388,371,401.5Q303,415,249.5,415Q196,415,131.5,399Q67,383,70,316.5Q73,250,63,178.5Q53,107,121,85.5Q189,64,254,50Q319,36,354,92.5Q389,149,405.5,199.5Q422,250,430.5,319Z;
+                      
+                      M444.5,318.5Q439,387,373.5,408.5Q308,430,255.5,412.5Q203,395,161,370Q119,345,90,297.5Q61,250,63.5,183Q66,116,121,69Q176,22,245.5,35.5Q315,49,351.5,99.5Q388,150,419,200Q450,250,444.5,318.5Z;
+                      
+                      M467.5,317.5Q436,385,372,407Q308,429,255.5,412Q203,395,151,377.5Q99,360,68.5,305Q38,250,80.5,204Q123,158,151,95.5Q179,33,252.5,24.5Q326,16,356.5,83.5Q387,151,443,200.5Q499,250,467.5,317.5Z;">
+                    </animate>
+                  </path>
+                </g>
+                </svg>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+        <div class="slide two parallax-effect">
+          <div class="credit">
+            <section class="hero">
+            <div class="container-hero">
+              <div class="container-text">
+                <p>Heart of Perfect Customer Service
+                </p>
+              </div>
+              <div class="hero-text">
+                <div class="call360">
+                  <h1 class="text-call">CALL <span></span></h1>
+                  <h1 class="text-360 ">360 <span></span></h1>
+                </div>
+                <p>Making every call count</p>
+                <div class="getmore">
+                  <a href="#" type="button" class="cta">Get More</a>
+                </div>
+              </div>
+              <div class="blob">
+                <svg viewBox="0 0 800 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+                  <g transform="translate(159.34142684936523, 18.754878997802734)">
+                    <path fill="#203a51">
+                      <animate attributeName="d"
+                        dur="10000ms"
+                        repeatCount="indefinite"
+                        values="M467.5,317.5Q436,385,372,407Q308,429,255.5,412Q203,395,151,377.5Q99,360,68.5,305Q38,250,80.5,204Q123,158,151,95.5Q179,33,252.5,24.5Q326,16,356.5,83.5Q387,151,443,200.5Q499,250,467.5,317.5Z;
+                        
+                        M418,298.5Q383,347,348.5,397Q314,447,251,444Q188,441,125,414Q62,387,74.5,318.5Q87,250,70.5,179Q54,108,119.5,78.5Q185,49,242.5,72.5Q300,96,355,115Q410,134,431.5,192Q453,250,418,298.5Z;
+                        
+                        M430.5,319Q439,388,371,401.5Q303,415,249.5,415Q196,415,131.5,399Q67,383,70,316.5Q73,250,63,178.5Q53,107,121,85.5Q189,64,254,50Q319,36,354,92.5Q389,149,405.5,199.5Q422,250,430.5,319Z;
+                        
+                        M444.5,318.5Q439,387,373.5,408.5Q308,430,255.5,412.5Q203,395,161,370Q119,345,90,297.5Q61,250,63.5,183Q66,116,121,69Q176,22,245.5,35.5Q315,49,351.5,99.5Q388,150,419,200Q450,250,444.5,318.5Z;
+                        
+                        M467.5,317.5Q436,385,372,407Q308,429,255.5,412Q203,395,151,377.5Q99,360,68.5,305Q38,250,80.5,204Q123,158,151,95.5Q179,33,252.5,24.5Q326,16,356.5,83.5Q387,151,443,200.5Q499,250,467.5,317.5Z;">
+                      </animate>
+                    </path>
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <!-- END HERO SECTION -->
+
+    <!-- SECTION 2 -->
+<section id="who-we-are" class="dark:bg-gray-900">
+  <div class="container">
+    <div class="section-content">
+      <div class="text">
+        <div class="who relative">
+          <h1 class="text-6xl font-extrabold">WHO</h1>
+          <h1 class="text-6xl font-extrabold">WHO</h1>
+        </div>
+        <h1 class="we-are text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#4588c8] to-[#d5dbe5]">WE ARE</h1>
+      </div>
+      <div class="paragraphe">
+          <p class="text-[#5f5f5f] dark:text-slate-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, esse? Sunt ea aspernatur ut ratione ducimus debitis fugiat iusto natus maxime, illo adipisci. Facilis obcaecati eaque omnis, laborum doloremque sit.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam hic necessitatibus quae recusandae qui iure at laboriosam tempora ullam, veniam, deserunt neque illum explicabo, nobis ipsa harum quidem saepe praesentium.
+          </p>
+          <div class="learn-more">
+            <a href="#" type="button" class="cta text-[#4588c8] dark:text-[#ffff]">LEARN MORE</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <!-- END SECTION 2 --> 
+
+    <!-- SECTION 3 -->
+    <section id="presence" class="dark:bg-gray-900">
+      <div class="container">
+        <div class="section3-content">
+          <h1 class="text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#4588c8] to-[#d5dbe5]">OUR INTERNATIONAL PRESENCE</h1>
+          <p class="text-[#5f5f5f] dark:text-slate-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, dignissimos? Ad accusamus officia repudiandae doloremque inventore, sapiente earum maiores facilis. Aliquam nemo corporis quasi? Quo quia earum deleniti atque voluptates! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis tenetur voluptatem tempora dolorem itaque, sunt perferendis aperiam assumenda quis sapiente quisquam autem voluptatibus reiciendis explicabo, saepe, dolorum eligendi cum! Quaerat.
+          </p>
+          <div class="parent-img">
+            <img src="./img/Word-map.png" alt="">
+          </div>
+          <div class="learn-more">
+            <a href="#" type="button" class="cta">LEARN MORE</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END SECTION 3 -->
+
+  <!-- SECTION 4 -->
+<section class="testimonials bg-gradient-to-r from-[#4588c8] to-[#d5dbe5] dark:bg-gradient-to-r  dark:from-[#4588c8] dark:to-[#212154] ">
+	<div class="container ">
+      <div class="testimonial-text">
+        <h1 class="text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#ffffff] to-[#d5dbe5]">TESTIMONIALS</h1>
+        <p class="text-[#5f5f5f]">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div class="flex flex-wrap ">
+        <div class="sm:w-full">
+          <div id="customers-testimonials" class="owl-carousel">
+            <!--1 -->
+            <div class="item">
+              <div class="shadow-effect dark:bg-gray-900  dark:text-white dark:border-gray-900">
+                <img class="img-circle" src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg" alt="">
+                <p>Owner</p>
+                <p>Dramatically maintain clicks-and-mortar solutions without functional solutions. Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate.</p>
+              </div>
+              <div class="testimonial-name">
+                <h1>NAME 1</h1>
+              </div>
+            </div>
+            <!--END OF  1 -->
+            <!-- 2 -->
+            <div class="item">
+              <div class="shadow-effect dark:bg-gray-900  dark:text-white dark:border-gray-900 ">
+                <img class="img-circle" src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg" alt="">
+                <p>Owner</p>
+                <p>Dramatically maintain clicks-and-mortar solutions without functional solutions. Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate.</p>
+              </div>
+              <div class="testimonial-name">NAME 2</div>
+            </div>
+            <!-- 2 -->
+            <!-- END OF 3 -->
+            <div class="item">
+              <div class="shadow-effect dark:bg-gray-900  dark:text-white dark:border-gray-900">
+                <img class="img-circle" src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg" alt="">
+                <p>Manager</p>
+                <p>Dramatically maintain clicks-and-mortar solutions without functional solutions. Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate.</p>
+              </div>
+              <div class="testimonial-name">NAME 3</div>
+            </div>
+            <!--END OF 3 -->
+            <!-- 4 -->
+            <div class="item">
+              <div class="shadow-effect dark:bg-gray-900  dark:text-white dark:border-gray-900">
+                <img class="img-circle" src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg" alt="">
+                <p>Owner</p>
+                <p>Dramatically maintain clicks-and-mortar solutions without functional solutions. Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate.</p>
+              </div>
+              <div class="testimonial-name">NAME 4</div>
+            </div>
+            <!--END OF 4 -->
+            <!-- 5 -->
+            <div class="item">
+              <div class="shadow-effect dark:bg-gray-900 dark:text-white dark:border-gray-900">
+                <img class="img-circle" src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg" alt="">
+                <p>Supervisor</p>
+                <p>Dramatically maintain clicks-and-mortar solutions without functional solutions. Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate.</p>
+              </div>
+              <div class="testimonial-name">NAME 5></div>
+            </div>
+            <!--END OF 5 -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <!-- END SECTION 4 -->
+
+
+
+
+
+<!-- SECTION 5 -->
+
+<div class="ag-slider-rotate dark:bg-gray-900 ">
+  <div class="container">
+    <div class="ag-format-container">
+      <div class="ag-values-block">
+        <div class="ag-values_title text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#4588c8] to-[#d5dbe5]">OUR VALUES</div>
+        <ul id="js-values-slider" class="ag-values_list">
+          <li class="ag-values_item">
+            <div class="ag-values_title-item dark:text-white">Behavior</div>
+            <div class="ag-values_text-item text-[#5f5f5f] dark:text-slate-50">
+              You make decisions and take responsibility for their implementation. Trying to solve the cause
+              of the problem, not the effect. You understand what needs to be done right now and do it. Your
+              actions and decisions are supported by reliable data and verified facts. Do not wait for
+              instructions on what to do. Your actions do not create excessive bureaucracy.
+            </div>
+          </li>
+  
+          <li class="ag-values_item ">
+            <div class="ag-values_title-item dark:text-white">Education</div>
+            <div class="ag-values_text-item text-[#5f5f5f] dark:text-slate-50">
+              You never stop learning, gain knowledge in related fields. Try to deeply understand the
+              business, customers, processes. Share information and knowledge proactively.
+            </div>
+          </li>
+  
+          <li class="ag-values_item ">
+            <div class="ag-values_title-item dark:text-white">Influence</div>
+            <div class="ag-values_text-item text-[#5f5f5f] dark:text-slate-50">
+              Focused on the result, not the process. You are welcome to new important tasks. Colleagues can
+              rely on you. You help colleagues. For you there is no words "this is not my task."
+            </div>
+          </li>
+  
+          <li class="ag-values_item">
+            <div class="ag-values_title-item dark:text-white">Innovation</div>
+            <div class="ag-values_text-item text-[#5f5f5f] dark:text-slate-50">
+              Put forward ideas to implement. Offer new best approaches and solutions. Guided by the
+              principles of "make it easier, make more profitable." Implement processes only if they help
+              you do more.
+            </div>
+          </li>
+  
+          <li class="ag-values_item">
+            <div class="ag-values_title-item dark:text-white">Leadership</div>
+            <div class="ag-values_text-item text-[#5f5f5f] dark:text-slate-50">
+              Self-motivating Self-improvement Self-disciplined Don't be afraid to make mistakes and learn from them. Take
+              care of your colleagues.
+            </div>
+          </li>
+  
+          <li class="ag-values_item">
+            <div class="ag-values_title-item dark:text-white">Communication</div>
+            <div class="ag-values_text-item text-[#5f5f5f] dark:text-slate-50">
+              If you need something - do not be silent, go and ask. Always check if the interlocutor
+              understood correctly. Write letters&#160;/ reports that can be used further without your help. With
+              understanding and respect, treat the point of view of the interlocutor. You say only what you
+              can say with all participants in the conversation.
+            </div>
+          </li>
+        </ul>
+  
+        <div class="ag-values-controller-block">
+          <!--<div class="value-controller">-->
+            <div class="js-values-controller_list ag-values-controller_list js-ag-values-controller_list-0">
+              <a class="js-values-controller_item ag-values-controller_item js-ag-active">
+                <span class="ag-values-controller_img-box">
+                  <img src="/img/behaivor.jpg" class="ag-values-controller_img" alt="">
+                </span>
+              </a>
+              <a class="js-values-controller_item ag-values-controller_item">
+                <span class="ag-values-controller_img-box">
+                  <img src="/img/education.jpg" class="ag-values-controller_img" alt="">
+                </span>
+              </a>
+              <a class="js-values-controller_item ag-values-controller_item">
+                <span class="ag-values-controller_img-box">
+                  <img src="/img/influence.jpg" class="ag-values-controller_img" alt="">
+                </span>
+              </a>
+              <a class="js-values-controller_item ag-values-controller_item">
+                <span class="ag-values-controller_img-box">
+                  <img src="/img/innovation.jpg" class="ag-values-controller_img" alt="">
+                </span>
+              </a>
+              <a class="js-values-controller_item ag-values-controller_item">
+                <span class="ag-values-controller_img-box">
+                  <img src="/img/leadership.jpg" class="ag-values-controller_img" alt="">
+                </span>
+              </a>
+              <a class="js-values-controller_item ag-values-controller_item">
+                <span class="ag-values-controller_img-box">
+                  <img src="/img/communication.jpg" class="ag-values-controller_img" alt="">
+                </span>
+              </a>
+              <a class="ag-values-controller_item ag-values-controller_item__main">
+                <span class="ag-values-controller_img-box image text-2xl dark:text-white">
+                  CORE VALUE
+                </span>
+              </a>
+            </div>
+          <!--</div>-->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END OF SECTION 5 -->
+
+
+
+<!-- SECTION 6 -->   
+<section id="informations" class="dark:bg-gray-900">
+  <div class="container">
+    <div class="informations-parent">
+      <h1 class="text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#4588c8] to-[#d5dbe5]">MEET US</h1>
+    <div class="informations-content">
+      <div class="information-div bg-white dark:bg-gray-100">
+        <i class="fa-solid fa-location-dot dark:text-[#212154]"></i>
+        <h3 class="dark:text-[#212154]">OUR<span class="font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#212154] to-[#4588c8] dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-[#d5dbe5] dark:to-[#4588c8]">ADRESS</span></h3>
+        <p class="dark:text-[#212154]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae!</p>
+      </div>
+      <div class="information-div blue-ciel bg-white dark:bg-gray-100">
+        <i class="fa-solid fa-phone  dark:text-[#212154]"></i>
+        <h3 class="dark:text-[#212154]">OUR<span class="font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#212154] to-[#4588c8] dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-[#d5dbe5] dark:to-[#4588c8]">PHONE</span></h3>
+        <p class="dark:text-[#212154]">Phone: <span class=" text-[#4588c8] cursor-pointer hover:text-[#212154]">+2125432423423</span></p>
+        <p class="dark:text-[#212154]"> Mobile: <span class=" text-[#4588c8] cursor-pointer hover:text-[#212154]">+2125432423423</span></p>
+      </div>
+      <div class="information-div blue2 bg-white dark:text-[#212154] dark:bg-gray-100">
+        <i class="fa-solid fa-clock  dark:text-[#212154]"></i>
+        <h3 class="dark:text-[#212154]">OUR<span class="font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#212154] to-[#4588c8] dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-[#d5dbe5] dark:to-[#4588c8]">SCHEDULES</span></h3>
+        <p class="dark:[#212154]">Monday to Friday: 10a.m. to 6 p.m.</p>
+      </div>
+    </div>
+    <div class="mapouter">
+      <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=tanger,%20borj,%20meraflores%20&t=k&z=9&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://putlocker-is.org"></a><br><style>.mapouter{position:relative;text-align:right;height:400px;width:100%;}</style><a href="https://www.embedgooglemap.net">embedgooglemap.net</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:400px;width:100%;}</style></div></div>
+    </div>
+    </div>
+  </div>
+</section>
+
+<!-- END OF SECTION 6 -->
+
+<!-- FOOTER -->
+<footer class=" footer p-4 bg-gray-200 sm:p-8 dark:bg-slate-600">
+  <div class="container">
+    <div class="md:flex md:justify-between">
+      <div class="mb-6 md:mb-0">
+          <a href="#" class="flex items-center">
+              <img src="/img/call360-logo.png" class="mr-4 h-12" alt="#" />
+          </a>
+      </div>
+      <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+          <div>
+              <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">KNOW US</h2>
+              <ul class="text-gray-900 dark:text-gray-200">
+                  <li class="mb-4">
+                      <a href="#" class="hover:underline">About Call 360</a>
+                  </li>
+                  <li>
+                      <a href="#" class="hover:underline">Data Privacy</a>
+                  </li>
+              </ul>
+          </div>
+          <div>
+              <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">MEET US</h2>
+              <ul class="text-gray-900 dark:text-gray-200">
+                  <li class="mb-4">
+                      <a href="#" class="hover:underline ">Contact</a>
+                  </li>
+                  <li>
+                      <a href="3" class="hover:underline">Address of our sites</a>
+                  </li>
+              </ul>
+          </div>
+          <div>
+              <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">JOIN US</h2>
+              <ul class="text-gray-900 dark:text-gray-200">
+                  <li class="mb-4">
+                      <a href="#" class="hover:underline">Our job offers</a>
+                  </li>
+                  <li>
+                      <a href="#" class="hover:underline">Talent Academy</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </div>
+  <hr class="my-6 border-gray-600 sm:mx-auto dark:border-gray-700 lg:my-8" />
+  <div class="sm:flex sm:items-center sm:justify-between">
+      <span class="text-sm text-gray-600 sm:text-center dark:text-gray-400">© 2022 <a href="#" class="hover:underline">Call 360</a>.
+      </span>
+      <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
+          <a href="#" class="text-gray-600  hover:text-[#212154] dark:hover:text-gray-900 dark:text-white">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
+              <span class="sr-only">Facebook page</span>
+          </a>
+          <a href="#" class="text-gray-600  hover:text-[#212154] dark:hover:text-gray-900 dark:text-white">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" /></svg>
+              <span class="sr-only">Instagram page</span>
+          </a>
+          <a href="#" class="text-gray-600  hover:text-[#212154] dark:hover:text-gray-900 dark:text-white ">
+            <i class="fa-brands fa-linkedin text-lg"></i>
+            <span class="sr-only">Linked In</span>
+          </a>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- END FOOTER -->
+
+<!-- FOLLOW US -SOCIAL MEDIA -->
+<div id="icon" class="icons">
+  <ul>
+    <li class="border-[#4588c8]"><a href="#" class="facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+    <li><a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a></li>
+    <li><a href="#" class="linkedin"><i class="fa-brands fa-linkedin"></i></a></li>
+  </ul>
+</div>
+
+
+
+
+
+
+
+<!-- SCROLL TO THE TOP -->
+<a id="back-to-top" href="#" class="inline-block align-middle text-center select-none  font-normal whitespace-no-wrap rounded  no-underline bg-gray-100 text-[#212154] hover:bg-gray-200 py-3 px-4 leading-tight text-xl back-to-top" role="button"><div class='scroll icon'><i class="fa fa-rocket" aria-hidden="true"></i></div></a>
+
+
+
+
+
+
+
+
+
+
+<script>
+  jQuery(document).ready(function($) {
+  "use strict";
+  //  TESTIMONIALS CAROUSEL HOOK
+  $('#customers-testimonials').owlCarousel({
+      loop: true,
+      center: true,
+      items: 3,
+      margin: 0,
+      autoplay: true,
+      dots:true,
+      autoplayTimeout: 4000,
+      smartSpeed: 450,
+      responsive: {
+          0: {
+          items: 1
+          },
+          768: {
+              items: 2
+          },
+          1170: {
+              items: 3
+          }
+      }
+  });
+  });
+  </script>
+
+
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 30,
+    effect: "fade",
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script>
+  $(document).ready(function(){
+	$(window).scroll(function () {
+			if ($(this).scrollTop() > 50) {
+				$('#back-to-top').fadeIn();
+			} else {
+				$('#back-to-top').fadeOut();
+			}
+		});
+		// scroll body to 0px on click
+		$('#back-to-top').click(function () {
+			$('body,html').animate({
+				scrollTop: 0
+			}, 400);
+			return false;
+		});
+});
+</script>
+
+
+<!-- Dark mode -->
+<script>
+  const switchToggle = document.querySelector('#switch-toggle');
+  const html = document.querySelector('html');
+  let isDarkmode = false
+  const darkIcon = `<i class="fa-solid fa-moon"></i>`
+  const lightIcon = `<i class="fa-solid fa-sun"></i>`
+  
+  function toggleTheme(){
+      isDarkmode =! isDarkmode
+      switchTheme()
+  }
+  
+  function switchTheme(){
+      if(isDarkmode){
+          html.classList.add('dark')
+          switchToggle.classList.remove('bg-[#4588c8]','-translate-x-2')
+          switchToggle.classList.add('bg-gray-700','translate-x-full')
+          setTimeout(()=> {
+              switchToggle.innerHTML = darkIcon
+          },250);
+      } else {
+          html.classList.remove('dark')
+          switchToggle.classList.add('bg-[#4588c8]','-translate-x-2')
+          switchToggle.classList.remove('bg-gray-700','translate-x-full')
+          setTimeout(()=> {
+              switchToggle.innerHTML = lightIcon
+          },250);
+      }
+  }</script>
+
+<!-- SECTION 5  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="https://rawcdn.githack.com/SochavaAG/example-mycode/d1f2a152d8c4cd08010d64fab8ebe710b3f63ad9/pens/slider-rotate/plugins/slick/slick.min.js"></script>
+
+<script>
+  (function ($) {
+    $(function () {
+  
+  // valuesslider
+  
+      var agValuesSlider= $('#js-values-slider'),
+        agValuesControllerItem = $('.js-values-controller_item');
+        agValuesSlider.slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        infinite: false,
+        speed: 100,
+        fade: true,
+        cssEase: 'linear',
+        responsive: [{
+          breakpoint: 1120,
+          settings: {
+            autoplay: false
+          }
+        }]
+      });
+      agValuesControllerItem.click(function() {
+        if (!$(this).hasClass('js-ag-active')) {
+          var nextSlide = $(this).index();
+          refreshController(nextSlide);
+        }
+      });
+      agValuesControllerItem.hover(
+        function() {
+          agValuesSlider.slick('slickPause');
+        },
+        function() {
+          agValuesSlider.slick('slickPlay');
+        }
+      );
+      agValuesSlider.on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+        refreshController(nextSlide);
+      });
+      var agValuesControllerList = $('.js-values-controller_list'),
+        agGetClass = agValuesControllerList.attr('class');
+  
+        function refreshController(nextSlide) {
+        var agValuesControllerListActive = 'js-ag-values-controller_list-' + nextSlide;
+  
+        agValuesSlider.slick('slickGoTo', nextSlide);
+        $('.js-values-controller_item.js-ag-active').removeClass('js-ag-active');
+        agValuesControllerItem.eq(nextSlide).addClass('js-ag-active');
+        agValuesControllerList.attr('class', agGetClass).removeClass('js-ag-values-controller_list-0').addClass(agValuesControllerListActive);
+      }
+    });
+  })(jQuery);
+  </script>
+    
+
+    <!-- Follow us -->
+<script>
+  myID = document.getElementById("icon");
+  var myScrollFunc = function() {
+    var y = window.scrollY;
+    if (y > 50) {
+      myID.className = "icons show"
+    } 
+    else{
+      myID.className = "icons hide"
+    }
+  };
+  window.addEventListener("scroll", myScrollFunc);
+  document.onscroll = function() {
+          if (window.innerHeight + window.scrollY > document.body.clientHeight) {
+              document.getElementById('icon').style.display='none';
+
+          }
+      }
+  document.onscroll = function() {
+    if (window.innerHeight + window.scrollY > document.body.clientHeight) {
+        document.getElementById('icon').style.display='none';
+    }else{
+        document.getElementById('icon').style.display='block';
+    }
+  } 
+  </script>
+
+  
+
+
+  </body>
+</html>
